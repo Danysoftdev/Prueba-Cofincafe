@@ -27,6 +27,8 @@ def procesarDatos():
     
     archivoEstadisticas = pd.DataFrame(list(estadisticas.items()), columns=['Descripcion', 'Valor'])
     
+    # Convertir los valores de las estadisticas a float, debido a que por defecto son de tipo int64
+    # y no se pueden serializar a JSON
     estadisticas = {k: float(v) for k, v in estadisticas.items()}
     
     archivoFusionado.to_csv('Backend/Data/Results/datos.csv', index=False)
