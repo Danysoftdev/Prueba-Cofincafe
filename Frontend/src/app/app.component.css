@@ -1,0 +1,37 @@
+.content-container {
+    padding: 20px;
+  }
+  
+  mat-card {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  .mat-column-Ingresos,
+  .mat-column-Egresos,
+  .mat-column-Total {
+    text-align: right;
+  }
+  
+  .high {
+    background-color: #ffcccb;
+  }
+  
+  .low {
+    background-color: #90ee90;
+  }
+  
+  .positive {
+    color: green;
+  }
+  
+  .negative {
+    color: red;
+  }
+  
+  mat-spinner {
+    margin: 0 auto;
+  }
